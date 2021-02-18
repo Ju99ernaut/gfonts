@@ -14,7 +14,8 @@ const Categories = ({ onClick }) => {
 
     if (target.attr("data-type") === 'subset') {
       target.closest(".dropdown")
-        .find(".dropdown-menu").toggle().end()
+        .find(".dropdown-menu").toggle();
+      target.closest(".dropdown")
         .find(".dropdown-toggle").addClass("active")
         .find(".selected").text(event.target.textContent);
     }

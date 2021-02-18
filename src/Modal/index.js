@@ -1,13 +1,13 @@
 // jshint ignore: start
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 import $ from 'cash-dom';
 import ClipboardButton from 'react-clipboard.js';
 
 class Modal extends React.Component {
   constructor(props) {
     super(props);
+    this.refMdl = React.createRef();
     this.state = {
       variants: '',
       subsets: ''
@@ -28,7 +28,7 @@ class Modal extends React.Component {
 
   fade = (e) => {
     if ((!e) || (e && $(e.target).hasClass('modal'))) {
-      $(ReactDOM.findDOMNode(this)).removeClass('show');
+      $(this.refMdl.current).removeClass('show');
       this.setState({variants: '', subsets: ''});
     }
   }
@@ -142,7 +142,7 @@ class Modal extends React.Component {
     });
 
     return (
-      <div className="modal" onClick={this.fade} >
+      <div className="modal" ref={this.refMdl} onClick={this.fade} >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
         <div className="modal-inner">
           <h1 style={title}><a target="_blank" rel="noreferrer" href={google}>{font.family}</a><span onClick={this.setStar} className={starred}></span></h1>

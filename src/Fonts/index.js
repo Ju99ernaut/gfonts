@@ -1,7 +1,6 @@
 // jshint ignore: start
 
 import React from 'react';
-import $ from 'cash-dom';
 import Infinite from 'react-infinite-scroll-component';
 import WebFont from 'webfontloader';
 import Batch from './Batch';
@@ -92,14 +91,14 @@ class Fonts extends React.Component {
 
     if (category === 'stars') {
       const stars = this.props.stars;
-      return ($.inArray(font.family, stars) > -1);
+      return (stars.indexOf(font.family) > -1);
     } else if (filterType === 'category') {
       return (font.category === category);
     } else if (filterType === 'suggestion') {
       const suggestions = this.state.suggestions[category];
-      return ($.inArray(font.family, suggestions) > -1);
+      return (suggestions.indexOf(font.family) > -1);
     } else if (filterType === 'subset') {
-      return ($.inArray(category, font.subsets) > -1);
+      return (font.subsets.indexOf(category) > -1);
     }
   }
 
@@ -154,7 +153,7 @@ class Fonts extends React.Component {
       let subsets = '';
 
       if (filterType === 'subset' && category !== 'latin') {
-        if ($.inArray('latin', font.subsets) !== -1) {
+        if (font.subsets.indexOf('latin') !== -1) {
           subsets = ':latin,' + category;
         } else {
           subsets = ':' + category;

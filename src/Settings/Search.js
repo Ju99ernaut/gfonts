@@ -4,7 +4,8 @@ import React from 'react';
 import _ from 'underscore';
 
 class Search extends React.Component {
-  componentWillMount() {
+  constructor(props) {
+    super(props);
     this.delayedCallback = _.debounce(function(event) {
       const value = event.target.value;
       this.props.onChange({search: value});
