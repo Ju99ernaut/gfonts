@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# GFonts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Google fonts search tool based on [fontcdn](https://github.com/thomaspark/fontcdn)
 
 ## Available Scripts
 
