@@ -74,7 +74,7 @@ class Fonts extends React.Component {
     const sort = this.props.settings.sort;
     const category = this.props.settings.category;
     const search = this.props.settings.search;
-    const text = this.props.settings.search;
+    const text = this.props.settings.text;
 
     if ((sort !== prevProps.settings.sort) || (category !== prevProps.settings.category) 
       || (search !== prevProps.settings.search) || (text !== prevProps.settings.text)) {
@@ -211,9 +211,8 @@ class Fonts extends React.Component {
         height={window.innerHeight}
         dataLength={this.state.elements.length}
         next={this.handleInfiniteLoad}
-        scrollThreshold={0.9}
         loader={this.elementInfiniteLoad()}
-        hasMore={true}
+        hasMore={!this.isInfiniteLoading}
       >
         {this.state.elements}
       </Infinite>
