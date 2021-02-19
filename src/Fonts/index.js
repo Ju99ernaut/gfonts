@@ -74,8 +74,10 @@ class Fonts extends React.Component {
     const sort = this.props.settings.sort;
     const category = this.props.settings.category;
     const search = this.props.settings.search;
+    const text = this.props.settings.search;
 
-    if ((sort !== prevProps.settings.sort) || (category !== prevProps.settings.category) || (search !== prevProps.settings.search)) {
+    if ((sort !== prevProps.settings.sort) || (category !== prevProps.settings.category) 
+      || (search !== prevProps.settings.search) || (text !== prevProps.settings.text)) {
       this.setState({elements: []});
       this.loadFontData();
     }
@@ -184,9 +186,9 @@ class Fonts extends React.Component {
   }
 
   handleInfiniteLoad = () => {
-    //this.setState({
-    //  isInfiniteLoading: true
-    //});
+    this.setState({
+      isInfiniteLoading: true
+    });
     setTimeout(() => {
       const groupSize = this.state.groupSize;
       const elemLength = this.state.elements.length * groupSize;
