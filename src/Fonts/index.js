@@ -211,6 +211,7 @@ class Fonts extends React.Component {
         height={window.innerHeight}
         dataLength={this.state.elements.length}
         next={this.handleInfiniteLoad}
+        scrollThreshold={0.9}
         loader={this.elementInfiniteLoad()}
         hasMore={true}
       >
@@ -221,9 +222,3 @@ class Fonts extends React.Component {
 };
 
 export default Fonts;
-//*elementHeight={this.props.settings.groupSize}
-//containerHeight={window.innerHeight}
-//infiniteLoadBeginBottomOffset={200}
-//*onInfiniteLoad={this.handleInfiniteLoad}
-//*loadingSpinnerDelegate={this.elementInfiniteLoad()}
-//isInfiniteLoading={this.state.isInfiniteLoading}
