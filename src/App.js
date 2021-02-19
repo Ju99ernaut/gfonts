@@ -4,9 +4,7 @@ import $ from 'cash-dom';
 import Settings from './Settings';
 import Fonts from './Fonts';
 import Modal from './Modal';
-//import logo from './logo.svg';
 import 'font-awesome/css/font-awesome.min.css';
-import './App.css';
 
 class App extends React.Component {
   constructor(props) {
