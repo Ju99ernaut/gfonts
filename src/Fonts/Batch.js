@@ -6,7 +6,8 @@ import Font from './Font';
 const Batch = ({ setModal, stars, onChange, start, end, data }) => {
   const modal = (value) => {
     setModal(value);
-  }
+  };
+
   const setStars = (value) => {
     onChange(value);
   };

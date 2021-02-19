@@ -25,7 +25,7 @@ const Settings = ({ onChange }) => {
 
   return (
     <div onClick={closeDropdown} className="settings">
-      <h1><a href="./">FontCDN</a></h1>
+      <h1><a href="./">GFonts</a></h1>
       <Search onChange={changeSetting} />
       <Categories onClick={changeSetting} />
       <hr/>
