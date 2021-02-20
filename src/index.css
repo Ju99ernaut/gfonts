@@ -190,6 +190,29 @@ input[type=range]::-moz-range-track {
     overflow: auto;
 }
 
+.nav {
+    display: flex;
+    background-color: #1263A1;
+    font-size: 25px;
+}
+
+.sidebar-open {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.sidebar-open:focus {
+    outline: none;
+}
+
+.sidebar-open:hover {
+    color: #fff;
+}
+
 .settings {
     max-width: 250px;
     min-height: 225px;
@@ -314,7 +337,6 @@ body.row .fontgroup {
     color: #000;
     overflow: hidden;
     white-space: nowrap;
-    z-index: 100;
     transition: color 0.3s;
 }
 
@@ -373,7 +395,6 @@ body:not(.row) .font .content:hover .preview span {
     font-size: 16px;
     color: #888;
     cursor: pointer;
-    z-index: 110;
 }
 
 .modal {
@@ -519,8 +540,14 @@ body:not(.row) .font .content:hover .preview span {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .settings {
+@media only screen and (min-width: 600px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .settings h1 {
         display: none;
     }
 }
