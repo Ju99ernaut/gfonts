@@ -22,7 +22,7 @@ class Modal extends React.Component {
     });
 
     $('.modal input[type=text]').on('click', function() {
-      $(this).select();
+      $(this).get(0).select();
     });
   }
 
