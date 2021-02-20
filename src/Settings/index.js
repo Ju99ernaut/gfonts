@@ -23,8 +23,10 @@ const Settings = ({ onChange }) => {
     $('.dropdown-menu').hide();
   }
 
+  const height = { height: window.innerHeight + "px" };
+
   return (
-    <div onClick={closeDropdown} className="settings">
+    <div onClick={closeDropdown} className="settings" style={height}>
       <h1><a href="./">GFonts</a></h1>
       <Search onChange={changeSetting} />
       <Categories onClick={changeSetting} />
