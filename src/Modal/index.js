@@ -170,7 +170,7 @@ class Modal extends React.Component {
             <h2>Styles</h2>
             {variants.map(function(variant, i) {
               return  <div key={variant.slug}>
-                        <input type="checkbox" id={variant.slug} value={variant.slug} onClick={that.setVariants} />
+                        <input type="checkbox" id={variant.slug} value={variant.slug} defaultChecked={false} onClick={that.setVariants} />
                         <label htmlFor={variant.slug} style={variant.css} >{variant.label} {variant.weight} {variant.style}</label>
                       </div>;
             })}
@@ -179,7 +179,7 @@ class Modal extends React.Component {
             <h2>Subsets</h2>
             {font.subsets.sort().map(function(subset, i) {
               return  <div key={subset}>
-                        <input type="checkbox" id={subset} value={subset} onClick={that.setSubsets} />
+                        <input type="checkbox" id={subset} value={subset} defaultChecked={false} onClick={that.setSubsets} />
                         <label htmlFor={subset}>{subset}</label>
                       </div>
             })}
