@@ -5,8 +5,24 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #CFD8DC;
+    color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s;
 }
 
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body.invert {
+    background-color: #212123;
+}
 
 * ::-webkit-scrollbar-track {
     background-color: transparent;
@@ -22,28 +38,6 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
-}
-
-html,
-body {
-    height: 100%;
-    overflow: hidden;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background-color: #CFD8DC;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: rgba(255, 255, 255, 0.6);
-    transition: background-color 0.3s;
-}
-
-body.invert {
-    background-color: #212123;
 }
 
 h1 {
@@ -191,16 +185,14 @@ input[type=range]::-moz-range-track {
 }
 
 #app {
+    display: flex;
     height: 100%;
     overflow: auto;
 }
 
 .settings {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 250px;
+    max-width: 250px;
+    min-height: 225px;
     padding: 0 20px;
     overflow-y: auto;
     background-color: #1263A1;
@@ -216,6 +208,10 @@ input[type=range]::-moz-range-track {
 .settings>div {
     clear: both;
     margin-bottom: 20px;
+}
+
+.infinite-scroll-component__outerdiv {
+    min-width: calc(100% - 250px);
 }
 
 .categories,
@@ -280,25 +276,22 @@ input[type=range]::-moz-range-track {
 }
 
 .fonts {
-    margin-left: 250px;
-    min-width: 500px;
-}
-
-.fonts {
     padding: 10px;
     font-size: 30px;
 }
 
+.fontgroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
 .font {
-    display: inline-block;
-    float: left;
-    width: 25%;
     height: 150px;
     padding: 10px;
 }
 
-body.row .font {
-    width: 100%;
+body.row .fontgroup {
+    grid-template-columns:  1fr;
 }
 
 .font .content {
@@ -523,5 +516,11 @@ body:not(.row) .font .content:hover .preview span {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .settings {
+        display: none;
     }
 }
