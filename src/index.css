@@ -628,4 +628,9 @@ body.invert .settings {
     .settings h1 {
         display: none;
     }
+
+    .modal .variants,
+    .modal .subsets {
+        width: 100%;
+    }
 }
