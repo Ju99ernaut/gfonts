@@ -4,9 +4,9 @@ const Navbar = ({ onClick }) => {
   return (
     <div className="nav">
       <button className="sidebar-open" onClick={onClick}>
-        <i className="fa fa-bars" style={{ fontSize: '25px' }}></i>
+        <i className="fa fa-bars"></i>
       </button>
-      <p><a href="./">GFonts</a></p>
+      <div><a href="./">GFonts</a></div>
     </div>
   );
 };

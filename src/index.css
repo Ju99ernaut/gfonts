@@ -1,12 +1,10 @@
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #CFD8DC;
-    color: rgba(255, 255, 255, 0.6);
+    background-color: #f7f7f7;
+    color: rgba(43, 43, 43, 0.6);
     transition: background-color 0.3s;
 }
 
@@ -45,24 +43,24 @@ h1 {
     text-align: center;
     font-size: 42px;
     font-weight: 300;
-    color: #ECEFF1;
+    color: #343536;
 }
 
 h2 {
     margin-bottom: 8px;
     font-size: 12px;
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(43, 43, 43, 0.6);
 }
 
 a {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(43, 43, 43, 0.6);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #fff;
+    color: #3b3b3b;
 }
 
 hr {
@@ -89,7 +87,7 @@ input[type="search"] {
     width: 100%;
     padding: 6px 6px 5px 6px;
     background-color: #fff;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     outline: none;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -116,7 +114,7 @@ input[type="search"]::-webkit-search-decoration {
 
 input[type=range]::-webkit-slider-runnable-track {
     height: 6px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
 
@@ -127,7 +125,7 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]::-moz-range-track {
     height: 6px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 }
 
@@ -140,10 +138,10 @@ input[type=range]::-moz-range-track {
     display: inline-block;
     margin: 0 4px 4px 0;
     padding: 6px 7px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(43, 43, 43, 0.6);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
@@ -151,12 +149,12 @@ input[type=range]::-moz-range-track {
 }
 
 .btn:hover {
-    color: #fff;
+    color: #3b3b3b;
 }
 
 .btn.active,
 .dropdown-toggle.active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #3b3b3b;
     color: #fff;
 }
 
@@ -192,8 +190,15 @@ input[type=range]::-moz-range-track {
 
 .nav {
     display: flex;
-    background-color: #1263A1;
+    background-color: #f7f7f7;
     font-size: 25px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav i {
+    color: rgba(43, 43, 43, 0.6);
+    font-size: 20px;
 }
 
 .sidebar-open {
@@ -218,14 +223,14 @@ input[type=range]::-moz-range-track {
     min-height: 225px;
     padding: 0 20px;
     overflow-y: auto;
-    background-color: #1263A1;
-    color: rgba(255, 255, 255, 0.6);
+    background-color: #f7f7f7;
+    color: rgba(43, 43, 43, 0.6);
     font-size: 12px;
     font-weight: 300;
 }
 
 .settings h1>a {
-    color: #ECEFF1;
+    color: #353738;
 }
 
 .settings>div {
@@ -265,8 +270,10 @@ input[type=range]::-moz-range-track {
     left: 10px;
     right: 10px;
     padding: 10px 10px 6px;
-    background-color: #0662A3;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3), 0 -1px 3px rgba(0, 0, 0, 0.3);
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .text input[type="text"] {
@@ -280,7 +287,7 @@ input[type=range]::-moz-range-track {
     height: 26px;
     padding: 6px 8px;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #3b3b3b;
     border-radius: 0 3px 3px 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
@@ -324,11 +331,13 @@ body.row .fontgroup {
     background-color: #fff;
     border-radius: 3px;
     overflow: hidden;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
 }
 
 .font .content:hover {
-    cursor: pointer;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .font .preview {
