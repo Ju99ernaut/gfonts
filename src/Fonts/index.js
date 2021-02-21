@@ -27,10 +27,10 @@ class Fonts extends React.Component {
 
   loadFontData = () => {
     const url = 'https://www.googleapis.com/webfonts/v1/webfonts?';
-    const key = 'key=AIzaSyDrwscy04xGYMeRyeWOnxXilRnyCafwqHA';
+    const key = process.env.REACT_APP_GOOGLE_API_KEY;
     const sort = this.props.settings.sort;
 
-    fetch(`${url}sort=${sort}&${key}`)
+    fetch(`${url}sort=${sort}&key=${key}`)
         .then((res) => res.json())
         .then((response) => {
           let obj = this.state.data || {};
