@@ -188,6 +188,7 @@ input[type=range]::-moz-range-track {
 
 .nav {
     display: flex;
+    justify-content: space-between;
     background-color: #f7f7f7;
     font-size: 25px;
     padding: 10px;
@@ -198,6 +199,16 @@ input[type=range]::-moz-range-track {
     color: rgba(43, 43, 43, 0.6);
     font-size: 20px;
 }
+
+.nav a {
+    margin-right: 10px;
+}
+
+.nav i:hover,
+.nav i:hover {
+    color: #73308d;
+}
+
 
 .sidebar-open {
     background-color: transparent;
