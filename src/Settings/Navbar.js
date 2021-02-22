@@ -6,7 +6,7 @@ const Navbar = ({ onClick }) => {
       <button className="sidebar-open" onClick={onClick}>
         <i className="fa fa-bars"></i>
       </button>
-      <div><a href="./">GFonts</a></div>
+      <a href="./"><img alt="logo" width="20px" src="favicon.svg"/></a>
     </div>
   );
 };

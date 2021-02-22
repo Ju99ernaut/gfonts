@@ -27,7 +27,7 @@ const Settings = ({ onChange }) => {
 
   return (
     <div onClick={closeDropdown} className="settings" style={height}>
-      <h1><a href="./">GFonts</a></h1>
+      <a className="logo" href="./"><img alt="logo" width="80px" src="favicon.svg"/></a>
       <Search onChange={changeSetting} />
       <Categories onClick={changeSetting} />
       <hr/>
