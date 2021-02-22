@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+<linearGradient id="grad_1_" gradientUnits="userSpaceOnUse" x1="3.3149" y1="9.9214" x2="37.9154" y2="29.8979">
+	<stop  offset="0.1022" style="stop-color:#673695"/>
+	<stop  offset="0.1192" style="stop-color:#823494"/>
+	<stop  offset="0.1429" style="stop-color:#A03293"/>
+	<stop  offset="0.1668" style="stop-color:#BB2E91"/>
+	<stop  offset="0.1904" style="stop-color:#CF2A91"/>
+	<stop  offset="0.2136" style="stop-color:#DE2890"/>
+	<stop  offset="0.2364" style="stop-color:#E82690"/>
+	<stop  offset="0.2581" style="stop-color:#ED2590"/>
+	<stop  offset="0.3025" style="stop-color:#F0577B"/>
+	<stop  offset="0.4032" style="stop-color:#F7941E"/>
+	<stop  offset="0.4194" style="stop-color:#F48F2B"/>
+	<stop  offset="0.4505" style="stop-color:#EC8349"/>
+	<stop  offset="0.4934" style="stop-color:#E26F69"/>
+	<stop  offset="0.5458" style="stop-color:#D44F85"/>
+	<stop  offset="0.5753" style="stop-color:#CB3694"/>
+	<stop  offset="0.6311" style="stop-color:#BF3694"/>
+	<stop  offset="0.7414" style="stop-color:#A03794"/>
+	<stop  offset="0.7688" style="stop-color:#983794"/>
+</linearGradient>
+<path fill="url(#grad_1_)" d="M20.8,18.2v5.466h13.067c-0.4,3.067-1.422,5.313-2.979,6.889c-1.912,1.912-4.889,4-10.089,4
+	c-8.045,0-14.333-6.488-14.333-14.533S12.755,5.488,20.8,5.488c4.333,0,7.512,1.712,9.845,3.912l3.846-3.845
+	C31.245,2.4,26.889,0,20.8,0C9.778,0,0.512,8.979,0.512,20S9.778,40,20.8,40c5.955,0,10.445-1.955,13.955-5.6
+	c3.601-3.601,4.733-8.688,4.733-12.779c0-1.266-0.088-2.444-0.288-3.421H20.8z"/>
+</svg>
