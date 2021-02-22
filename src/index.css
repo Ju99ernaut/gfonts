@@ -39,7 +39,7 @@ h1 {
     text-align: center;
     font-size: 42px;
     font-weight: 300;
-    color: #343536;
+    color: #73308d;
 }
 
 h2 {
@@ -202,6 +202,7 @@ input[type=range]::-moz-range-track {
 
 .nav a {
     margin-right: 10px;
+    font-size: 15px;
 }
 
 .nav i:hover,

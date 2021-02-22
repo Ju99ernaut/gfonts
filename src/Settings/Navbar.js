@@ -7,7 +7,7 @@ const Navbar = ({ onClick }) => {
         <button className="sidebar-open" onClick={onClick}>
           <i className="fa fa-bars"></i>
         </button>
-        <a href="./"><img alt="logo" width="20px" src="favicon.svg"/></a>
+        <a href="./"><img alt="logo" width="20px" src="favicon.svg"/>fonts</a>
       </span>
       <span>
         <a href="http://github.com/Ju99ernaut/gfonts/">
