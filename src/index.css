@@ -50,7 +50,7 @@ h2 {
 }
 
 a {
-    color: rgba(43, 43, 43, 0.6);
+    color: #73308d;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -152,7 +152,7 @@ input[type=range]::-moz-range-track {
 
 .btn.active,
 .dropdown-toggle.active {
-    background-color: #3b3b3b;
+    background-color: #73308d;
     color: #fff;
 }
 
@@ -228,8 +228,10 @@ input[type=range]::-moz-range-track {
     transition: background-color 0.3s;
 }
 
-.settings h1>a {
-    color: #353738;
+.settings a.logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .settings>div {
@@ -286,7 +288,7 @@ input[type=range]::-moz-range-track {
     height: 26px;
     padding: 6px 8px;
     margin: 0;
-    background-color: #3b3b3b;
+    background-color: #73308d;
     border-radius: 0 3px 3px 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
@@ -378,7 +380,7 @@ body:not(.row) .font .content:hover .preview span {
     width: 100%;
     font-size: 12px;
     font-weight: 300;
-    color: #888;
+    color: #73308d;
 }
 
 .font .family {
@@ -393,7 +395,7 @@ body:not(.row) .font .content:hover .preview span {
     right: 6px;
     top: 6px;
     font-size: 16px;
-    color: #888;
+    color: #73308d;
     cursor: pointer;
 }
 
@@ -532,7 +534,6 @@ body.invert .font .content:hover {
 }
 
 body.invert .font .preview,
-body.invert a:hover,
 body.invert .btn:hover,
 body.invert .modal button[data-clipboard-text]:hover,
 body.invert .modal label {
@@ -545,7 +546,6 @@ body.invert .nav {
 }
 
 body.invert .nav i,
-body.invert a,
 body.invert h1,
 body.invert h2,
 body.invert .modal h1,
@@ -580,7 +580,7 @@ body.invert .modal button[data-clipboard-text] {
 body.invert .btn.active,
 body.invert .dropdown-toggle.active,
 body.invert .modal button[data-clipboard-text]:active {
-    background-color: #181818;
+    background-color: #73308d;
     color: #fff;
 }
 
@@ -625,10 +625,6 @@ body.invert .settings {
 }
 
 @media only screen and (max-width: 600px) {
-    .settings h1 {
-        display: none;
-    }
-
     .modal .variants,
     .modal .subsets {
         width: 100%;
