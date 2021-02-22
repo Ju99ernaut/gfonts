@@ -1,0 +1,2 @@
+[template.enviroment]
+    GOOGLE_API_KEY = "your google fonts API key"
