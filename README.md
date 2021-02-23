@@ -1,6 +1,35 @@
 # GFonts
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2985a81-6d49-4a1b-9fc2-592bc40eb97d/deploy-status)](https://app.netlify.com/sites/blocfonts/deploys)
+
+| `light theme` | `dark theme` |
+|---------------|--------------|
+| ![light](light.png) | ![dark](dark.png) |
+
 Google fonts search tool based on [fontcdn](https://github.com/thomaspark/fontcdn)
+
+[![Netlify Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Ju99ernaut/gfonts)
+
+## Development
+
+Clone repo
+
+```sh
+$ git clone https://github.com/Ju99ernaut/gfonts.git
+$ cd gfonts
+```
+
+Install dependecies
+
+```sh
+$ yarn install
+```
+
+Start dev server
+
+```sh
+$ yarn start
+```
 
 ## Available Scripts
 
@@ -68,3 +97,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## License
+
+MIT
