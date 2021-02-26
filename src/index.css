@@ -560,7 +560,9 @@ body.invert .nav {
 body.invert h2,
 body.invert .modal h1,
 body.invert .modal a,
-body.invert .modal h2 {
+body.invert .modal h2,
+body.invert .nav i,
+body.invert .nav a {
     color: #c2c2c2;
 }
 
@@ -594,17 +596,15 @@ body.invert .modal button[data-clipboard-text]:active {
     color: #fff;
 }
 
-body.invert .nav a:hover,
-body.invert .nav i:hover,
 body.invert .sidebar-open:hover {
     color: #73308d;
 }
 
+body.invert .nav a:hover,
+body.invert .nav i:hover,
 body.invert .font .meta,
 body.invert .font .star,
-body.invert h1,
-body.invert .nav i,
-body.invert .nav a {
+body.invert h1 {
     color: #ca91e0;
 }
 
