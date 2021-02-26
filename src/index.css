@@ -557,8 +557,6 @@ body.invert .nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-body.invert .nav i,
-body.invert h1,
 body.invert h2,
 body.invert .modal h1,
 body.invert .modal a,
@@ -594,6 +592,20 @@ body.invert .dropdown-toggle.active,
 body.invert .modal button[data-clipboard-text]:active {
     background-color: #73308d;
     color: #fff;
+}
+
+body.invert .nav a:hover,
+body.invert .nav i:hover,
+body.invert .sidebar-open:hover {
+    color: #73308d;
+}
+
+body.invert .font .meta,
+body.invert .font .star,
+body.invert h1,
+body.invert .nav i,
+body.invert .nav a {
+    color: #ca91e0;
 }
 
 body.invert .settings {
