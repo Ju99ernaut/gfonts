@@ -1,10 +1,10 @@
 # GFonts
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f2985a81-6d49-4a1b-9fc2-592bc40eb97d/deploy-status)](https://app.netlify.com/sites/blocfonts/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f2985a81-6d49-4a1b-9f2c-592bc40eb97d/deploy-status)](https://app.netlify.com/sites/blocfonts/deploys)
 
 | `light theme` | `dark theme` |
 |---------------|--------------|
-| ![light](light.png) | ![dark](dark.png) |
+| ![light](public/light.png) | ![dark](public/dark.png) |
 
 Google fonts search tool based on [fontcdn](https://github.com/thomaspark/fontcdn)
 
